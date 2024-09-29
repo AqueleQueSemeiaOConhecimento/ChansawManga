@@ -5,14 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class User extends Model
+class Capitulo extends Model
 {
     use HasFactory;
 
-    protected $table = 'user';
+    protected $table = 'capitulo';
 
-    public function mangas()
+    public function manga() 
     {
-        return $this->belongsToMany(Manga::class);
+        return $this->belongsTo(Manga::class);
     }
 }

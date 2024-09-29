@@ -19,7 +19,7 @@ return new class extends Migration
             $table->dateTime('modified')->nullable();
 
             $table->foreign("id_manga")->references("id")->on("manga")->onDelete("cascade");
-            $table->foreign("id_categoria")->references("id")->on("manga")->onDelete("cascade");
+            $table->foreign("id_categoria")->references("id")->on("categoria")->onDelete("cascade");
         });
     }
 
