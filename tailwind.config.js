@@ -6,7 +6,18 @@ export default {
     './resources/**/*.vue', 
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        customBlack: '#0B0B0B',
+        customOrange: '#F19813',
+      },
+      borderWidth: {
+        '20': '20px',
+      },
+      fontFamily: {
+        kodemon: ['"Kode Mono"', 'monospace'],
+      },
+    },
   },
   plugins: [],
 }
